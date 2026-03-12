@@ -1,0 +1,32 @@
+services:
+
+  postgres-db:
+    image: postgres:16
+    container_name: postgres-data
+    environment:
+      POSTGRES_DB: taskdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: matar
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  task-api:
+    build: ./backend
+    container_name: task-api
+    ports:
+      - "9000:9000"
+    depends_on:
+      - postgres-db
+
+  task-frontend:
+    build: ./frontend
+    container_name: task-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - task-api
+
+volumes:
+  postgres_data:
