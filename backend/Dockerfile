@@ -8,7 +8,7 @@ COPY pom.xml .
 COPY src ./src
 
 # Build de l'application
-RUN mvn clean package -DskipTests
+RUN mvn clean package
 
 # -------- Stage 2 : Image légère pour exécuter --------
 FROM eclipse-temurin:17-jdk-jammy
