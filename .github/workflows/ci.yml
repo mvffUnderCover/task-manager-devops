@@ -1,4 +1,3 @@
-```yaml
 name: Task Manager CI/CD
 
 on:
@@ -113,4 +112,3 @@ jobs:
             cd task-manager
             docker-compose pull
             docker-compose up -d
-```
