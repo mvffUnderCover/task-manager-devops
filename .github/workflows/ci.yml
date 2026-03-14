@@ -90,8 +90,8 @@ jobs:
 
       - name: Push backend image
         run: |
-          docker push bachirc934/task-manager-backend:latest
+          docker push bachirc934/task-manager-backend:v1
 
       - name: Push frontend image
         run: |
-          docker push bachirc934/task-manager-frontend:latest
+          docker push bachirc934/task-manager-frontend:v1
