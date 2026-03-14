@@ -63,6 +63,8 @@ jobs:
       - name: Build frontend
         working-directory: frontend
         run: npm run build
+        env:
+          VITE_API_URL: http://54.148.153.189:9000/api/tasks
 
   docker-build-push:
 
@@ -81,17 +83,13 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build backend Docker image
-        run: |
-          docker build -t bachirc934/task-manager-backend:v3 ./backend
+        run: docker build -t bachirc934/task-manager-backend:v4 ./backend
 
       - name: Build frontend Docker image
-        run: |
-          docker build -t bachirc934/task-manager-frontend:v3 ./frontend
+        run: docker build -t bachirc934/task-manager-frontend:v4 ./frontend
 
       - name: Push backend image
-        run: |
-          docker push bachirc934/task-manager-backend:v3
+        run: docker push bachirc934/task-manager-backend:v4
 
       - name: Push frontend image
-        run: |
-          docker push bachirc934/task-manager-frontend:v3
+        run: docker push bachirc934/task-manager-frontend:v4
