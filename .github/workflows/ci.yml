@@ -82,11 +82,11 @@ jobs:
 
       - name: Build backend Docker image
         run: |
-          docker build -t bachirc934/task-manager-backend:latest ./backend
+          docker build -t bachirc934/task-manager-backend:v1 ./backend
 
       - name: Build frontend Docker image
         run: |
-          docker build -t bachirc934/task-manager-frontend:latest ./frontend
+          docker build -t bachirc934/task-manager-frontend:v1 ./frontend
 
       - name: Push backend image
         run: |
