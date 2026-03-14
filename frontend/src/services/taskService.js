@@ -1,4 +1,4 @@
-const API = import.meta.env.VITE_API_URL;
+const API = "http://54.148.153.189:9000/api/tasks";
 
 export const getTasks = async () => {
   const res = await fetch(API);
