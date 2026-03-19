@@ -215,6 +215,14 @@ DELETE /api/tasks/{id}
 
 ---
 
+
+## 🖼️ Schéma d’Architecture
+
+Le diagramme ci-dessous illustre l’architecture technique globale de l’application :
+
+![Architecture Service-COUD](docs/task_manager_architecture)
+
+
 ## Author
 
 DevOps Project by **Bachir**
