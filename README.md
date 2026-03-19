@@ -222,6 +222,10 @@ Le diagramme ci-dessous illustre l’architecture technique globale de l’appli
 
 ![Architecture TASK-MANAGER-DEVOPS](docs/architecture.png)
 
+## 🎥 Démonstration
+
+👉 Vidéo de démonstration :
+https://drive.google.com/file/d/1S25oOS0KFh7I_ESl_DAKriS7A5WS_apk/view?usp=sharing 
 
 ## Author
 
