@@ -220,7 +220,7 @@ DELETE /api/tasks/{id}
 
 Le diagramme ci-dessous illustre l’architecture technique globale de l’application :
 
-![Architecture TASK-MANAGER-DEVOPS](docs/architecture)
+![Architecture TASK-MANAGER-DEVOPS](docs/architecture.png)
 
 
 ## Author
