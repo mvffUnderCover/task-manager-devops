@@ -94,21 +94,13 @@ jobs:
       - name: Push frontend image
         run: docker push bachirc934/task-manager-frontend:v5
 
-
-  deploy-ec2:
-
-    runs-on: ubuntu-latest
-    needs: docker-build-push
-
-   # steps:
-
-     # - name: Deploy to EC2
-      #  uses: appleboy/ssh-action@v1.0.3
-       # with:
-        #  host: ${{ secrets.EC2_HOST }}
-         # username: ${{ secrets.EC2_USER }}
-          #key: ${{ secrets.EC2_SSH_KEY }}
-         # script: |
-          #  cd task-manager
-           # docker-compose pull
-            #docker-compose up -d
+ # - name: Deploy to EC2
+#   uses: appleboy/ssh-action@v1.0.3
+#   with:
+#     host: ${{ secrets.EC2_HOST }}
+#     username: ${{ secrets.EC2_USER }}
+#     key: ${{ secrets.EC2_SSH_KEY }}
+#     script: |
+#       cd task-manager
+#       docker-compose pull
+#       docker-compose up -d
