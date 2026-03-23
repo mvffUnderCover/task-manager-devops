@@ -1,4 +1,4 @@
-const API = "http://localhost:9000/api/tasks";
+const API = "http://35.89.108.148:9000/api/tasks";
 
 export const getTasks = async () => {
   const res = await fetch(API);
