@@ -225,7 +225,7 @@ Le diagramme ci-dessous illustre l’architecture technique globale de l’appli
 ## 🎥 Démonstration
 
 👉 Vidéo de démonstration :
-https://drive.google.com/file/d/1S25oOS0KFh7I_ESl_DAKriS7A5WS_apk/view?usp=sharing 
+https://drive.google.com/file/d/10Wu9hskuyAESs-C7mVEBM5_NLj4hdHXx/view?usp=sharing
 
 ## Author
 
